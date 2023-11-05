@@ -1,0 +1,30 @@
+body {
+  .wrapper {
+    header {
+      background-color: rgba(222, 116, 43, 0.90);
+      height: 100vh;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+
+      .whiteBlock {
+        position: absolute;
+        right: 0;
+        background-color: white;
+        width: 800px;
+        height: 100%;
+        clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        z-index: 5;
+      }
+
+      .imgGiraffe {
+        position: absolute;
+        right: 5vh;
+        height: 85vh;
+        z-index: 10;
+        top: 10vh;
+      }
+
+    }
+  }
+}

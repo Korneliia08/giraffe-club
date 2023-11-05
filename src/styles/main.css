@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+h6, h5, h4, h3, h2, h1, p {
+  margin: 0;
+}
+
+body .wrapper {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
