@@ -4,10 +4,16 @@ body {
 
 h6, h5, h4, h3, h2, h1, p {
   margin: 0;
+  font-family: Bookman, cursive;
 }
 
 body .wrapper {
   width: 100%;
+}
+
+@font-face {
+  font-family: Bookman;
+  src: url("../assets/fonts/BOOKOS.TTF");
 }
 
 /*# sourceMappingURL=main.css.map */

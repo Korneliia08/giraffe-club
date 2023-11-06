@@ -1,11 +1,193 @@
 body {
   .wrapper {
+    .divForWindow {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(122, 122, 122, 0.44);
+      position: fixed;
+      top: 0;
+      z-index: 25;
+      display: none;
+      justify-content: center;
+      align-items: center;
+
+      .whiteSmallBlock {
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: #FCFCFC;
+        border-radius: 48px;
+        width: 400px;
+        height: 350px;
+
+        .blockForForm {
+          .titleForm {
+            text-align: center;
+            color: black;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 130%;
+            margin-bottom: 40px;
+          }
+
+          form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            input {
+              color: #5C5C5C;
+              font-size: 20px;
+              font-weight: 300;
+              border: none;
+              border-bottom: 2px solid gray;
+              margin-bottom: 25px;
+            }
+
+            .inputSubmit {
+              border-radius: 10px;
+              background: #DF803E;
+              transition: 700ms;
+              padding: 8px 25px;
+              border: none;
+              color: #000;
+              font-size: 24px;
+              font-weight: 300;
+
+              &:hover {
+                cursor: pointer;
+                scale: 0.98;
+              }
+            }
+          }
+        }
+
+        .blockSuccess {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+
+          .titleThankYou,
+          .content {
+            margin-bottom: 20px;
+            color: #000;
+            font-size: 34px;
+            font-weight: 300;
+            line-height: 130%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
     header {
       background-color: rgba(222, 116, 43, 0.90);
       height: 100vh;
       box-sizing: border-box;
       position: relative;
       z-index: 1;
+      display: flex;
+      align-items: center;
+
+      .blockForTopHeaderEmpty {
+        //padding: 40px 0 20px 0;
+        //background-color: black;
+        //display: none;
+        //width: 100%;
+        //height: 500px;
+        //position: fixed;
+        //top: 0;
+      }
+
+      .blockForTopHeader {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+        position: fixed;
+        top: 0;
+        z-index: 40;
+
+        nav {
+          margin-left: 110px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 25px;
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: 300;
+            transition: 400ms;
+
+            &:hover {
+              cursor: pointer;
+              scale: 0.98;
+            }
+          }
+        }
+
+        .blockForSocials {
+          padding-right: 250px;
+
+          .logo {
+            width: 60px;
+            height: 35px;
+            transition: 400ms;
+
+            &:hover {
+              cursor: pointer;
+              scale: 0.98;
+            }
+          }
+        }
+      }
+
+      .blockForTitle {
+        margin-left: 100px;
+        position: relative;
+        z-index: 15;
+
+        .title {
+          color: black;
+          text-align: center;
+          font-size: 60px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+
+        .content {
+          width: 500px;
+          color: black;
+          font-size: 40px;
+          font-weight: 300;
+          line-height: 130%;
+          margin-bottom: 40px;
+        }
+
+        .btnGetConsultation {
+          border: none;
+          color: black;
+          font-size: 26px;
+          font-weight: 300;
+          padding: 10px 20px;
+          border-radius: 10px;
+          background: #FCFCFC;
+          transition: 700ms;
+
+          &:hover {
+            cursor: pointer;
+            scale: 0.95;
+            background-color: aliceblue;
+          }
+        }
+      }
 
       .whiteBlock {
         position: absolute;
@@ -15,16 +197,20 @@ body {
         height: 100%;
         clip-path: polygon(100% 0, 0 50%, 100% 100%);
         z-index: 5;
+
+        .close {
+          position: relative;
+          top: 80px;
+        }
       }
 
       .imgGiraffe {
         position: absolute;
         right: 5vh;
-        height: 85vh;
+        height: 75vh;
         z-index: 10;
-        top: 10vh;
+        top: 15vh;
       }
-
     }
   }
 }
