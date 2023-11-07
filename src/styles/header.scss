@@ -196,7 +196,7 @@ body {
         width: 800px;
         height: 100%;
         clip-path: polygon(100% 0, 0 50%, 100% 100%);
-        z-index: 5;
+        z-index: 45;
 
         .close {
           position: relative;
@@ -208,7 +208,7 @@ body {
         position: absolute;
         right: 5vh;
         height: 75vh;
-        z-index: 10;
+        z-index: 46;
         top: 15vh;
       }
     }
