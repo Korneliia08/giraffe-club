@@ -1,0 +1,50 @@
+body .wrapper footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+body .wrapper footer .titleInFooter {
+  font-size: 40px;
+  font-weight: 600;
+}
+body .wrapper footer .blockContact {
+  display: flex;
+  column-gap: 25px;
+}
+body .wrapper footer .blockContact .contact .titleFooter {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+body .wrapper footer .blockContact .contact span {
+  font-size: 18px;
+  font-weight: 300;
+}
+body .wrapper footer .socials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .wrapper footer .socials .titleFooter {
+  font-size: 18px;
+  font-weight: 300;
+}
+body .wrapper footer .socials .logo {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 10px;
+}
+body .wrapper footer .socials .logo img {
+  width: 24px;
+  height: 24px;
+  transition: 700ms;
+}
+body .wrapper footer .socials .logo img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/*# sourceMappingURL=footer.css.map */

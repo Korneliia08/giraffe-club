@@ -1,0 +1,59 @@
+body .wrapper footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px;
+
+  .titleInFooter {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .blockContact {
+    display: flex;
+    column-gap: 25px;
+
+    .contact {
+      .titleFooter {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .titleFooter {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .logo {
+      margin-top: 10px;
+      display: flex;
+      column-gap: 10px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        transition: 700ms;
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.10;
+        }
+      }
+    }
+  }
+}

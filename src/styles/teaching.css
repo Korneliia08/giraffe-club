@@ -1,0 +1,90 @@
+body .wrapper main .teaching {
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+body .wrapper main .teaching span {
+  color: #000;
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 80px;
+}
+body .wrapper main .teaching .blockForImgAndList {
+  margin-top: 70px;
+  display: flex;
+}
+body .wrapper main .teaching .blockForImgAndList ul {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 130%;
+  /*
+        li::marker {
+          content: "0" counter(li);
+          display: block;
+          border: 2px solid black;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+        }
+  */
+}
+body .wrapper main .teaching .blockForImgAndList ul li {
+  color: #000;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 130%;
+  counter-increment: li;
+  list-style-type: none;
+  position: relative;
+  padding-left: 10px;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+body .wrapper main .teaching .blockForImgAndList ul li:before {
+  content: "0" counter(li);
+  position: absolute;
+  border: 2px solid black;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 100%;
+  left: -40px;
+}
+body .wrapper main .teaching .blockForImgAndList img {
+  width: 750px;
+  height: 350px;
+}
+body .wrapper main .teaching .courseFormats {
+  margin-top: 50px;
+}
+body .wrapper main .teaching .courseFormats h2 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+body .wrapper main .teaching .courseFormats .container {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+body .wrapper main .teaching .courseFormats .container .blockForCourse h3 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+body .wrapper main .teaching .courseFormats .container .blockForCourse p {
+  width: 330px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=teaching.css.map */

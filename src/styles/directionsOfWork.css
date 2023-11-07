@@ -1,0 +1,68 @@
+body .wrapper main .directionOfWork {
+  background-color: rgba(222, 116, 43, 0.9);
+  padding: 50px 0 50px 0;
+  box-sizing: border-box;
+}
+body .wrapper main .directionOfWork h2 {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+  margin: 50px 80px 60px 80px;
+}
+body .wrapper main .directionOfWork h2 span {
+  color: #FCFCFC;
+  font-size: 26px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body .wrapper main .directionOfWork .container {
+  display: flex;
+  justify-content: center;
+}
+body .wrapper main .directionOfWork .container img {
+  width: 280px;
+  height: 380px;
+}
+body .wrapper main .directionOfWork .container .blockForList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .wrapper main .directionOfWork .container .blockForList ul {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper main .directionOfWork .container .blockForList ul li {
+  padding: 10px 0 10px 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 130%;
+  border-bottom: 2px solid black;
+}
+body .wrapper main .directionOfWork .container .blockForList ul li:first-child {
+  border-top: 2px solid black;
+}
+body .wrapper main .directionOfWork .container .blockForList .btnLeave {
+  margin-top: 40px;
+  background-color: transparent;
+  color: #000;
+  border-radius: 10px;
+  border: 2px solid #000;
+  display: inline-flex;
+  padding: 10px 20px;
+  font-size: 26px;
+  font-weight: 300;
+  transition: 700ms;
+}
+body .wrapper main .directionOfWork .container .blockForList .btnLeave:hover {
+  cursor: pointer;
+  scale: 0.95;
+}
+
+/*# sourceMappingURL=directionsOfWork.css.map */
