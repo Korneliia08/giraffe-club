@@ -18,6 +18,22 @@ body {
         border-radius: 48px;
         width: 400px;
         height: 350px;
+        position: relative;
+        transition: scale 200ms;
+
+        .close {
+          position: absolute;
+          right: 29px;
+          top: 22px;
+          font-size: 20px;
+          font-weight: bolder;
+          transition: 200ms;
+
+          &:hover {
+            cursor: pointer;
+            scale: 1.2;
+          }
+        }
 
         .blockForForm {
           .titleForm {
@@ -28,6 +44,7 @@ body {
             line-height: 130%;
             margin-bottom: 40px;
           }
+
 
           form {
             display: flex;
@@ -42,6 +59,10 @@ body {
               border: none;
               border-bottom: 2px solid gray;
               margin-bottom: 25px;
+
+              &.inputReq:invalid {
+                border-bottom: 2px solid red;
+              }
             }
 
             .inputSubmit {
@@ -110,7 +131,8 @@ body {
         border-bottom: 2px solid white;
         position: fixed;
         top: 0;
-        z-index: 40;
+        z-index: 47;
+        transition: background-color 300ms ease-in-out;
 
         nav {
           margin-left: 110px;

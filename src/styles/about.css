@@ -54,6 +54,7 @@ main .about .blockContainer .block p {
   font-weight: 300;
   line-height: 130%;
   margin: 20px 0;
+  position: relative;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -18,16 +18,17 @@
 <div class="wrapper">
     <div class="divForWindow">
         <div class="whiteSmallBlock">
+            <span class="close">X</span>
             <div class="blockForForm">
-                <h2 class="titleForm">Get a consultation</h2> <span class="close">X</span>
+                <h2 class="titleForm">Get a consultation</h2>
                 <form>
-                    <input placeholder="Name" type="text">
-                    <input placeholder="Number of Phone" type="text">
+                    <input name="name" placeholder="Name" required type="text">
+                    <input name="number" placeholder="Number of Phone" required type="text">
                     <input class="inputSubmit" type="submit" value="Send">
                 </form>
             </div>
             <div class="blockSuccess">
-                <h2 class="titleThankYou">Thank You!</h2>  <span class="close">X</span>
+                <h2 class="titleThankYou">Thank You!</h2>
                 <p class="content"> Your request has been sent.
                     Wait for the call</p>
             </div>
@@ -37,10 +38,10 @@
         <div class="blockForTopHeaderEmpty"></div>
         <div class="blockForTopHeader">
             <nav>
-                <a href="">About</a>
-                <a href="">Directions of work</a>
-                <a href="">Teaching</a>
-                <a href="">Reviews</a>
+                <a href="#about">About</a>
+                <a href="#directions">Directions of work</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#reviews">Reviews</a>
             </nav>
             <div class="blockForSocials">
                 <img alt="logoPhone" class="logo" src="./assets/images/logoPhone.svg">
@@ -58,7 +59,7 @@
         <img alt="imgGiraffe" class="imgGiraffe" src="assets/images/giraffe.svg">
     </header>
     <main>
-        <div class="about">
+        <div class="about" id="about">
             <h2><span class="leftText">About Us</span>There are many language schools - one leader!</h2>
             <div class="blockContainer">
                 <div class="block">
@@ -101,7 +102,7 @@
             </div>
         </div>
 
-        <div class="directionOfWork">
+        <div class="directionOfWork" id="directions">
             <h2 class="title"><span>Directions of work</span> What can You find with Us?</h2>
             <div class="container">
                 <img alt="photo girrafe" src="./assets/images/giraffe.svg">
@@ -121,7 +122,7 @@
                 <img alt="photo girrafe" src="./assets/images/giraffe.svg">
             </div>
         </div>
-        <div class="teaching">
+        <div class="teaching" id="teaching">
             <span>Teaching</span>
             <div class="blockForImgAndList">
                 <ul>
@@ -146,7 +147,7 @@
             </div>
         </div>
 
-        <div class="reviews">
+        <div class="reviews" id="reviews">
             <h2><span>Reviews</span>What they say about us</h2>
             <div class="blockForReview">
                 <div class="review">

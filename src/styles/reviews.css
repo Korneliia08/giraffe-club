@@ -28,6 +28,16 @@ body .wrapper main .reviews .blockForReview .review {
   box-sizing: border-box;
   border-radius: 20px;
   background-color: white;
+  animation: home infinite;
+  animation-duration: 8s;
+  transition: all 8s;
+  animation-delay: 1s;
+}
+@keyframes home {
+  50% {
+    translate: -1px;
+    scale: 0.98;
+  }
 }
 body .wrapper main .reviews .blockForReview .review h4 {
   font-size: 30px;
@@ -35,8 +45,44 @@ body .wrapper main .reviews .blockForReview .review h4 {
   line-height: 130%;
 }
 body .wrapper main .reviews .blockForReview .review span {
+  display: block;
+  width: 100%;
   font-size: 20px;
   font-weight: 300;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  position: relative;
+}
+body .wrapper main .reviews .blockForReview .review span:hover:after {
+  cursor: pointer;
+}
+body .wrapper main .reviews .blockForReview .review span:after {
+  content: "";
+  background-image: url("../assets/images/giraffe.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 85px;
+  height: 140px;
+  background-size: 85px;
+  position: absolute;
+  right: 0;
+  top: -95px;
+  animation: giraffe infinite;
+  animation-duration: 8s;
+  transition: 8s;
+  animation-delay: 1s;
+}
+@keyframes giraffe {
+  50% {
+    rotate: 2deg;
+    translate: 50px;
+    scale: 1.2;
+  }
+  100% {
+    translate: 0px;
+    scale: 1;
+    rotate: 0deg;
+  }
 }
 body .wrapper main .reviews .blockForReview .review p {
   margin-top: 20px;

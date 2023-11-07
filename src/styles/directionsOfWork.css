@@ -36,14 +36,30 @@ body .wrapper main .directionOfWork .container .blockForList {
 body .wrapper main .directionOfWork .container .blockForList ul {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
 }
 body .wrapper main .directionOfWork .container .blockForList ul li {
+  counter-increment: block;
   padding: 10px 0 10px 0;
   color: #000;
   font-size: 24px;
   font-weight: 300;
   line-height: 130%;
   border-bottom: 2px solid black;
+  position: relative;
+}
+body .wrapper main .directionOfWork .container .blockForList ul li:before {
+  content: "0" counter(block);
+  position: absolute;
+  border: 2px solid black;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 100%;
+  left: -49px;
+  top: 5px;
 }
 body .wrapper main .directionOfWork .container .blockForList ul li:first-child {
   border-top: 2px solid black;
