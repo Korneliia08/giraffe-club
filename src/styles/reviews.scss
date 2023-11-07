@@ -1,0 +1,54 @@
+body .wrapper main .reviews {
+  background-color: #E18240;
+  padding: 50px 0;
+  box-sizing: border-box;
+
+  h2 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 130%;
+    text-align: center;
+    position: relative;
+
+    span {
+      position: absolute;
+      left: 80px;
+      color: #000;
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+
+  .blockForReview {
+    display: flex;
+    justify-content: center;
+
+
+    .review {
+      margin-top: 40px;
+      padding: 40px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      background-color: white;
+
+      h4 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 130%;
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p {
+        margin-top: 20px;
+        width: 800px;
+        font-size: 21px;
+        font-weight: 300;
+      }
+    }
+  }
+}
